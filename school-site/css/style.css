@@ -122,6 +122,10 @@ p {
     letter-spacing: .03125rem;
 }
 
+.attribution {
+    text-align: right;
+}
+
 li {
     font-size: .75rem;
     letter-spacing: .03125rem;

@@ -1,0 +1,278 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* Imported Typefaces NOT DONE*/
+
+@font-face {
+    font-family: "ultra";
+    src: url('../fonts/serif/ultra-regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/sans-serif/roboto-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/sans-serif/lato-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+
+/* Typography NOT DONE */
+
+p {
+    font-family: "roboto", Arial, sans-serif;
+}
+
+h2, h3, h4{
+    font-family: "lato", Helvetica, sans-serif;
+    letter-spacing: .0325rem;
+}
+h1 {
+    font-family: "ultra-regular", Garamond, serif;
+    font-size: 2rem;
+    letter-spacing: .25rem;
+    transform: rotate(-5deg);
+}
+footer p {
+    float: left;
+}
+
+.highlight {
+    font-family: "ultra-regular", Garamond, serif;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #6F3436;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 4px -1px #888;
+}
+
+
+
+.attribution {
+    text-align: right;
+    float: right;
+}
+
+/* Layout */
+
+.main-section{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 1.25rem;
+}
+
+aside {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    border-left: 1px solid #28234B;
+    padding-left: 2rem;
+}
+
+aside p {
+    border-bottom: 1px solid #28234B;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.subsection {
+    display: flex;
+}
+
+header {
+    padding: 1.5rem 0rem 1rem 0rem;
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+/* Images and Figures */
+
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0px;
+}
+
+.article-image {
+    width: 33%;
+    float: left;
+    margin-right: .75rem;
+}
+
+.subsection {
+    margin: 1rem 0rem;
+}
+
+.subsection figure{
+    margin: 0rem .25rem;
+    background-color: #D9D9D9;
+}
+
+.subsection figure figcaption{
+    padding: 0.3rem 0.5rem;
+}
+
+/* ADD CLICK BEHAVIOR */
+button{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+    background-color: #6F3436;
+    color: #fff;
+    box-shadow: 5px 5px 4px -1px #888;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+button:focus, button:hover {
+    color: #FFF;
+    background-color: #6F3436;
+    text-transform: lowercase;
+}
+
+button:active {
+    color: #FFF;
+    background-color: #000;
+}
+
+/* Links and Navigation */
+
+a {
+    text-decoration: none;
+}
+
+/*this is nav a */
+.regular{
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: "lato", Arial, sans-serif;
+    color: #262626;
+}
+
+nav {
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
+
+nav a:focus, nav a:hover {
+    color: #FFF;
+    background-color: #6F3436;
+}
+
+nav a:active {
+    color: #FFF;
+    background-color: #000;
+}
+
+/* text color for emphasize won't change and the button looks kinda dumb */
+.emphasize {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: "lato", Arial, sans-serif;
+    color: #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-5deg);
+    padding-bottom: 0rem;
+}
+
+/* Why won't the size change on the ellipse */
+.expand {
+    font-size: .25rem;
+    letter-spacing: .09rem;
+    padding-bottom: .5rem;
+}
+
+/* Link Styling */
+
+a {
+    outline: none;
+}
+
+a:link, a:visited {
+    color: #33658A;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
