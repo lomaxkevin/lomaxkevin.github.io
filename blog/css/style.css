@@ -235,8 +235,8 @@ nav {
 }
 
 nav a:focus, nav a:hover {
-    color: #FFF;
-    background-color: #6F3436;
+    color: #6F3436;
+    
 }
 
 nav a:active {
