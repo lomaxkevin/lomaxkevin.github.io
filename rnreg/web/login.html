@@ -1,0 +1,144 @@
+<!--$CwuRes: src/regi/www/webapps/rnreg/web/login.html,v 1.8 2019/07/29 16:11:01 resnet Exp $ -->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+  <head>
+      <link type="text/css" rel="stylesheet" href="./CSS/primary.css" media="all" />
+    <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <title>ResNet Registration: Login</title>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<!-- Loads header and footer pages -->
+<script> 
+$(function(){
+  $("#header").load("header2.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>     
+    <!--This is brought over from the old log in portal, it will give an error message if they are trying to log in
+    with a password that does not meet the length requirements-->
+    <script language="JavaScript">
+
+      if (self != top) {
+      <!-- top.location.href = location.href; -->
+      }
+
+      function validateForm(form) {
+        var err = 0;
+        errMsg = "Form not submitted!\n";
+        if (form.username.value.length < 14) {
+        }
+        if (form.pword.value.length < 8) {
+          ++err;
+          errMsg = 
+            errMsg + "\nPlease enter a valid password.";
+        }
+        if (err) {
+          alert(errMsg);
+          return false;
+        }
+
+      form.submit();
+
+      }
+
+    </script>
+
+  </head>
+  
+<!--#include file="header.html" -->
+
+   <body>
+
+       <div id="header"></div>
+       
+      	<div id="wrapper">
+	
+		<a name="main-content"></a>
+		
+		
+		<div class="verticalLine">
+		
+			<div id="left">  <div class="region">
+    <div id="block-system-main-menu" class="block block-menu">
+
+  
+    <div class="content">
+      <p>&nbsp;</p><p>&nbsp;</p>
+	<ul class="menu">
+	<!--<li class="first collapsed  collapsed " id="dhtml_menu-327"><a href="./register.html" title="">Register a Device</a><ul class="menu">
+	  <li class="first" id="dhtml_menu-326"><a href="./regwired.html" title="">Wired Device</a></li>
+	  <li id="dhtml_menu-1449"><a href="./regwireless.html" title="">Wireless Device (Game LAN)</a></li>
+	  <li  id="dhtml_menu-1452"><a href="./gamehelp.html" title="">Game Consoles Help</a></li>
+	  <li class="last" id="dhtml_menu-1469"><a href="./wiredhelp.html" title="">Wired Registration Help</a></li> -->
+</ul></li>
+<!--<li class="collapsed collapsed" id="dhtml_menu-328"><a href="./editwired.html" title="">Remove/Edit Devices</a><ul class="menu">
+    <li class="first" id="dhtml_menu-1453"><a href="./editwired.html" title="">Wireless Devices</a></li>
+    <li id="dhtml_menu-1471"><a href="./editwired.html" title="">Wired Devices</a></li>
+    <li id ="dhtml_menu-1471"><a href ="./removedevice.html" title ="">Remove Devices</a></li>
+</ul></li>-->
+
+
+           <!-- <li>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></li>-->
+
+<li class="last" id="dhtml_menu-1468"><a href="https://www.cwu.edu/resnet/contact-us" title="">Contact Us</a></li>
+</ul>  </div>
+</div>
+
+<div id="block-menu-menu-related-links-menu" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first last" id="dhtml_menu-1467"><a href="http://www.cwu.edu/its" title="" target="_blank">IS Home</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-3">
+
+    
+  <div class="content">
+    <p class="indent"><a href="https://www.cwu.edu/resnet/contact-us" target="_blank">Resnet Support</a>:<br />(509) 963-2001<br /><a href="http://www.cwu.edu/its-css/computer-labs" target="_blank">Computer Labs</a>:<br />(509) 963-2989<br /><a href="http://www.cwu.edu/its-helpdesk" target="_blank">Service Desk</a>:<br />(509) 963-2001</p><p class="indent">Hours:<br />Mon - Fri, 8 AM to 5 PM</p>  </div>
+    </div>
+  </div>
+</div></div> 
+              
+	 <section class="content">
+          <div class="column-one">
+            <!--posts to /rnreg/ResNetReg -->
+              <form name=req method="post" action="/test_rnreg/ResNetReg">
+                <input type=hidden name=action value=login>
+
+                                                
+               <div class="form-element-wrapper">
+                <label for="username">Username</label><br>
+                <input class="form-element form-field" type=text name=username size=20 maxlength=30>
+              </div>
+
+              <div class="form-element-wrapper">
+                <label for="password" >Password</label><br>
+                <input class="form-element form-field" type=password size=20 maxlength=30 name=pword>
+              </div><br>
+
+                <!--Validates the form-->
+                <button class="form-element form-button" type="submit" value ="Login" name="Login"
+                    onClick="validateForm(this.form)"
+                    >Login
+                </button>
+              </form>
+          </div>
+      </section>
+      <aside>
+        <p>Please only enter your CWU Username <br>
+          Example: John Doe's username would be doej
+        </p>
+      </aside>
+  </div>
+<div id="footer"></div> 
+</body>
+</html>

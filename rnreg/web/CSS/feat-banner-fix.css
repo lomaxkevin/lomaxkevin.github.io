@@ -1,0 +1,53 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/feat-banner-fix.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+#ldl-rb {
+    height: 28px;
+    padding: 0px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#ldl-rb:hover {
+    position: relative !important;
+    /*height:100px !important;;*/
+    overflow: visible !important;
+    padding-left: 0px;
+}
+
+#ldl-descs {
+    background-color: rgba(167, 5, 50, .7);
+    box-sizing: border-box;
+    padding: 4px 16px 8px;
+    padding-right: 32px;
+    min-height: 20px;
+}
+.ldl-desc {
+    padding-right: 32px;
+    box-sizing:border-box;
+}
+
+#ldl-descs::after {
+    content: "◀";
+    text-align: right;
+    position: absolute;
+    font-size: 10px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    right: 6px;
+    top: 6px;
+    transform: rotate(180deg);
+    transition: all .1s linear;
+}
+
+#ldl-rb:hover #ldl-descs::after {
+    transform: rotate(270deg);
+    top: 8px;
+}
+
+#ldl-rb:hover #ldl-descs {
+    position: absolute !important;
+    z-index: 1000;
+    height: 213px !important;
+    width: 100%;
+    padding-right: 20px;
+}

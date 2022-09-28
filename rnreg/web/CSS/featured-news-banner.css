@@ -1,0 +1,65 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/featured-news-banner.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+.page-news #banner {
+  width: auto;
+  margin-top: 22px;
+}
+
+#newsfeed_featured {
+  width: 100%;
+  height: auto;
+  margin: 16px 0 0 8px;
+  background-color:#8c0723;/*match img bg color*/
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /*-webkit-flex-wrap:nowrap;
+  flex-wrap:wrap;*/
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+}
+
+#newsfeed_featured_img_con {
+  position: relative;
+  /*width: 61%;
+  height: 230px;
+  float: left;*/
+  width: auto;
+  height: 230px;
+  float: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-flex: 2 2 auto;
+    flex: 2 2 auto;
+}
+
+#newsfeed_featured_rs {
+  /*width: 38%;
+  min-width:223px;
+  float: left;*/
+  width:auto;
+  float:none;
+  height: 230px;
+  background-image: url(/sites/all/modules/newsfeed/red_sqr_228.jpg);
+  padding: 10px;
+  color: #FFF;
+  box-sizing: border-box;
+  font-size:15px;
+  font-weight:400;
+  -webkit-flex: 0 0 225px;
+  flex: 0 0 225px;
+}
+
+#newsfeed_featured_rs h4{
+  font-size:1.1em;
+  font-weight:500;
+}
+#newsfeed_featured_rs a {
+  font-weight:700;
+}

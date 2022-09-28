@@ -1,0 +1,152 @@
+<!-- $CwuRes: src/regi/www/webapps/rnreg/web/header.html,v 1.7 2019/07/29 16:11:01 resnet Exp $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<!--This is the header to be included in all the rnreg pages --->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="shortcut icon" href="../../media/favicon.ico" type="image/vnd.microsoft.icon" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta name="description" content="ResNet Host Registration" />
+	<meta name="keywords" content="central washington university, cwu, college, hostreg, registration, resnet" />
+	<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+      <link rel="canonical" href="https://mot.resnet.cwu.edu/rnreg/" />
+      <link rel="shortlink" href="https://mot.resnet.cwu.edu/rnreg/" />
+  <title>ResNet Registration</title>
+      <link type="text/css" rel="stylesheet" href="./CSS/primary.css" media="all" />
+      <link type="text/css" rel="stylesheet" href="./CSS/main.css" media="all" />
+     
+     
+</head>
+<body class="front" >
+
+    <script language="JavaScript">
+
+      function help() {
+      open("rnreg-help.html", "window1", 
+      "toolbar=no,titlebar=false,width=450,height=300,scrollbars=yes");  
+      }
+
+      function aup() {
+      open("resnet_aup.html", "window2", 
+      "toolbar=no,titlebar=false,width=500,height=350,scrollbars=yes,resizable=yes");  
+      }
+
+      function validateForm(form) {
+
+        form.submit();
+
+      }
+
+      var agt = navigator.userAgent.toLowerCase();
+      if (agt.indexOf("mac") != -1) {
+        if (agt.indexOf("msie 4") != -1) {
+	  window.location="unsupported.html"
+	}
+      }
+
+    </script>
+
+
+<div id="alert-notice"></div>
+<!--
+<a class="element-invisible element-focusable" href="#main-body">Skip to body</a>
+-->
+<div id="page">
+	<div id="intro-wrapper">
+		<div id="header-wrapper">
+			<div id="header-top">
+				<div id="header-top-white">
+					<div id="header-top-container">
+						<div id="header-title"><a href="/">Central Washington University</a></div>
+					</div>
+				</div>
+			</div>
+			<div id="header-bot">
+				<a href="#" id="menu-link"></a>
+				<div id="menu-main-wrapper">
+					<div id="logo">
+						<a href="https://www.cwu.edu/"><img src="images/logo_white.png" 
+						  title="CWU Logo"/></a>
+					</div>
+					<div id="drawer">
+						<div id="search-wrapper">
+							  <div class="region">
+    <div id="block-search-form" class="block">
+
+</div>
+  </div>
+						</div>
+						<ul id="menu-header" class="flex-container">
+              <!-------------------------------------------------------------------------------------------->      
+                    <!-- form option with input seperate from button :: THIS ITERATION IS BROKEN  --> 
+                    <!-- <div class="content">
+                        <form name=req method="post" action="/test_rnreg/ResNetReg"> 
+                            <input type=hidden name=action value=logout>
+							<font face=Arial size=-1>
+                                    <button class="form-element form-button" type="submit" value ="Logout" name="Logout"
+                                        onClick="validateForm(this.form)"
+                                    >Logout</button>
+                            </font>
+                        </form> 
+                    </div> -->
+               <!------------------------------------------------------------------------------------------->
+               
+               
+               <!------------------------------------------------------------------------------------------->
+                    <!-- form option with input integrated with button :: THIS ITERATION IS BROKEN  -->
+                       <!-- <form name=req method="post" action="/test_rnreg/ResNetReg"> 
+							<font face=Arial size=-1>
+                                <button class="form-element form-button" type="submit" name="action" value="logout" 
+                                        onClick="validateForm(this.form)"
+                                >Logout</button>
+                            </font>
+                        </form> -->
+               <!------------------------------------------------------------------------------------------->
+               
+               <!------------------------------------------------------------------------------------------->
+                    <!--THIS WORKS, BUT DOES NOT INVALIDATE SESSION NOR DOES IT CALL DOPOST "LOGOUT" LOGIC --> 
+							<!--<li class="gift"><a href="./login.html">Logout</a></li> -->
+               <!------------------------------------------------------------------------------------------->
+                     
+                     <!-- this method is an attempt to change the onClick function call  -->
+                     <form name=req method="post" action="/test_rnreg/ResNetReg"> 
+                        <font face=Arial size=-1>
+                            <button class="form-element form-button" type="submit" name="action" value="logout" 
+                                onClick="validateForm(this.form)"
+                            >Logout</button>
+                        </font>
+                    </form>   
+               
+               
+							<li class="last"><a id="search-link"></a></li>
+						</ul>
+<!--This are the 3 links at the top of the page-->
+						<ul id="menu-main" class="flex-container">
+							<li><a href="./wiredhelp.html" target="_blank">Get Help</a></li>
+							<li><a href="./policy.html" target="_blank">Policy</a></li>
+							<li><a href="https://www.cwu.edu/resnet/stay-secure" target="_blank">Security</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<h2 id="site-name"><a href="https://mot.resnet.cwu.edu/rnreg/" title="ResNet Device Registration">ResNet Device Registration</a></h2>
+	</div><!-- /#intro-wrapper-->
+
+        </div>
+
+
+

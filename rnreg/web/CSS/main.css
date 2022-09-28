@@ -1,0 +1,13 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/main.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('primary.css');
+@import url('degree-drawer.css');
+@import url('degree-cards.css');
+@import url('legacy.css');
+@import url('central-today.css');
+@import url('featured-news-banner.css');
+@import url('feat-banner-fix.css');
+@import url('home-hero-video.css');
+@import url('cal.css');
+@import url('dept-resources.css');

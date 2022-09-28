@@ -1,0 +1,180 @@
+<!-- $CwuRes: src/regi/www/webapps/rnreg/src/rnreg1.template,v 1.10 2013/09/17 16:59:17 jgerdes Exp $ -->
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+  <head>
+
+    <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Refresh" CONTENT="960">
+    <title>ResNet Registration</title>
+
+    <script language="JavaScript">
+
+      if (self != top) {
+      <!-- top.location.href = location.href; -->
+      }
+
+      function help() {
+      open("rnreg-help.html", "window1", 
+      "toolbar=no,titlebar=false,width=450,height=300,scrollbars=yes");  
+      }
+
+      function aup() {
+      open("resnet_aup.html", "window2", 
+      "toolbar=no,titlebar=false,width=500,height=350,scrollbars=yes,resizable=yes");  
+      }
+
+      function checkNIC(NIC, silent) {
+        var validChars = "ABCDEF0123456789";
+        var len = NIC.value.length;
+        if (len < 12) {
+          if (!silent)
+            alert("\nPlease enter a valid Ethernet address");
+          return false;
+        }
+        for (i = 0; (i < len); ++i) {
+          currentChar = NIC.value.charAt(i).toUpperCase();
+          charFound = 0;
+          for (j = 0; (j < 16) && !charFound; ++j) {
+            if (currentChar == validChars.charAt(j))
+              ++charFound;
+          }
+          if (!charFound) {
+            if (!silent)
+              alert("\nPlease enter a valid Ethernet address");
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function validateForm(form) {
+        var err = 0;
+        errMsg = "Form not submitted!\n";
+        if (checkNIC(form.nic, 1) == false) {
+          ++err;
+          errMsg = errMsg + "\nPlease enter a valid Ethernet address.";
+        }
+        if (err) {
+          alert(errMsg);
+          return false;
+        }
+
+      form.submit();
+
+      }
+
+      var agt = navigator.userAgent.toLowerCase();
+      if (agt.indexOf("mac") != -1) {
+        if (agt.indexOf("msie 4") != -1) {
+	  window.location="unsupported.html"
+	}
+      }
+
+    </script>
+
+  </head>
+
+<body background="images/grey1.gif" bgcolor="#ffffff" >
+
+<table>
+
+  <td align=center valign=middle>
+
+    <table background="images/rnreg-table.jpeg" border=0 bgcolor=#c0c0c0 width=430 height=430
+      cellpadding="3">
+
+      <tr>
+        <td>
+          <table background="images/grey2.gif" border=0 bgcolor=#c0c0c0
+            align=center width=340 cellpadding="5">
+          <form name=req method="post" action="/rnreg/ResNetReg">
+	    <input type=hidden name=action value=register>
+            <tr>
+              <td>
+                <table background="images/grey2.gif" border=0 bgcolor=#c0c0c0
+                  align=center width=340 cellpadding=1>
+                  <tr>
+                  <td></td>
+                  <td></td>
+                  </tr>
+                  <tr>
+                    <td><font face=Arial size=-1>Ethernet address:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %NIC% -->
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face=Arial size=-1>Operating system:</font></td>
+                    <td>
+                    <font face=Arial size=-1>
+			<!-- %OS% -->
+                    </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+           <tr>
+             <td>
+               <!-- %CACHE_MESSAGE% -->
+               <hr width=60%>
+             </td>
+           </tr>
+            <tr>
+              <td>
+                <table background="images/grey2.gif" border=0 bgcolor=#c0c0c0
+                  align=center width=330 cellpadding=0>
+                  <tr>
+                    <td>
+		      <font face=Arial size=-1>
+                      By submitting this request I agree to be bound by the
+                      <a href= "javascript:aup();">CWU ResNet Acceptable Use
+                               Policy</a>.
+		      </font>	       
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align>
+                <table background="images/grey2.gif" border=0 bgcolor=#c0c0c0
+                  align=center width=250 cellpadding=3>
+                  <tr>
+                    <td align=left>
+                      <font face=Arial size=-1>
+                      <input type="button" value="Agree & submit"
+                        onClick="validateForm(this.form)">
+                      </font>
+                    </td>
+                    <td align=right>
+                      <font face=Arial size=-1>
+                      <input type="reset" value="Clear">
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </form>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</table>
+
+</body>
+
+</html>
+

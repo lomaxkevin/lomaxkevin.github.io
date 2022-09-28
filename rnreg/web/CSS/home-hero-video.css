@@ -1,0 +1,59 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/home-hero-video.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+.front.page-node-3116 #intro-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.front.page-node-3116 #intro-wrapper > div {
+  position:relative;
+  z-index: 100;
+}
+.front.page-node-3116 #intro-wrapper iframe {
+  position: absolute;
+  width:110%;
+  min-height:100%;
+  height:3000px;
+  top:-1150px;
+  left:-5%;
+ pointer-events: none;
+}
+@media all and (min-width:2400px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+  top:-775px;
+  }
+}
+@media all and (max-width:2400px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+  top:-950px;
+  }
+}
+@media all and (max-width:1800px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+  top:-1115px;
+  }
+}
+@media all and (max-width:1200px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+  top:-1190px;
+  }
+}
+@media all and (max-width:900px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+  width:125%;
+  min-height:100%;
+  top:-1150px;
+  left:-12.50%;
+  }
+}
+@media all and (max-width:768px) {
+  .front.page-node-3116 #intro-wrapper iframe {
+    display:none;
+  }
+  .front.page-node-3116 #intro-wrapper {
+  position: initial;
+  overflow: hidden;
+}
+  .front.page-node-3116 #intro-wrapper > div {
+  position:initial;
+
+}
+}

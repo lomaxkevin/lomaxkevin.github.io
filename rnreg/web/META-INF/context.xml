@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $CwuRes: src/regi/www/webapps/rnreg/web/META-INF/context.xml,v 1.3 2019/06/10 18:00:33 alvisoj Exp $ -->
+<Context path="/test_rnreg"/>

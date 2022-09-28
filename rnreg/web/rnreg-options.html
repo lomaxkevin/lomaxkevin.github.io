@@ -1,0 +1,133 @@
+<!-- $CwuRes: src/regi/www/webapps/rnreg/web/rnreg-options.html,v 1.1 2003/02/19 23:32:26 hartd Exp $ -->
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+  <head>
+
+    <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+    <title>Options</title>
+
+  </head>
+
+  <body background="images/grey1.gif">
+  <!-- body -->
+
+    <form name="req" method="post" action="/rnreg/ResNetReg" target="work">
+      <input type=hidden name=action value="logout">
+      <input type=hidden name=rownum value="-2">
+    </form>
+     
+    <script language="JavaScript">
+      var agent = navigator.userAgent.toLowerCase();
+      function doHelp() {
+        open("rnreg-help.html", "window1", 
+        "toolbar=no,titlebar=false,width=450,height=300,scrollbars=yes");  
+      }
+      function doEdit() {
+        document.req.action.value = "edit";
+        document.req.submit();
+      }
+      function doLogout() {
+        document.req.action.value = "logout";
+        document.req.submit();
+      }
+      function doMouseDown(imageNum) {
+        document.images[imageNum].src=pressedButtons[imageNum].src;
+        return true;
+      }
+      function doMouseUp(imageNum) {
+        document.images[imageNum].src=normalButtons[imageNum].src;
+        return true;
+      }
+      var normalButtons = new Array();
+      var pressedButtons = new Array();
+      for (i = 0; i < 5; ++i) {
+        normalButtons[i] = new Image();
+      }
+      for (i = 0; i < 5; ++i) {
+        pressedButtons[i] = new Image();
+      }
+      normalButtons[0].src="images/login.gif";
+      normalButtons[1].src="images/register.gif";
+      normalButtons[2].src="images/edit.gif";
+      normalButtons[3].src="images/help.gif";
+      normalButtons[4].src="images/logout.gif";
+      pressedButtons[0].src="images/login-pressed.gif";
+      pressedButtons[1].src="images/register-pressed.gif";
+      pressedButtons[2].src="images/edit-pressed.gif";
+      pressedButtons[3].src="images/help-pressed.gif";
+      pressedButtons[4].src="images/logout-pressed.gif";
+    </script>
+
+
+<table background="images/rnreg-options-bg.jpeg" border=0 cellpadding=0 cellspacing=0
+       width=189 height=479 vspace=0>
+
+    <tr><td valign=middle>  
+    <table background="images/grey3-beveled.jpeg" border=0 cellpadding=0 cellspacing=0 width=120
+      vspace=0>
+
+    <tr><td align=center>
+    <a href="rnreg-login.html" target=work
+      onMouseDown=doMouseDown(0) onMouseUp=doMouseUp(0)><img src="images/login.gif"
+      border=none vspace=0></a>
+    </td></tr>
+
+    <tr><td align=center>
+    <a href="/rnreg/ResNetReg" target=work
+      onMouseDown=doMouseDown(1) onMouseUp=doMouseUp(1)><img src="images/register.gif"
+      border=none vspace=0></a>
+    </td></tr>
+
+    <tr><td align=center>
+    <script language="JavaScript">
+      if (agent.indexOf("msie") != -1) {
+        document.writeln("<a href='#dummy1' onClick=doEdit() " +
+          "onMouseDown=doMouseDown(2) onMouseUp=doMouseUp(2)><img src='images/edit.gif'" +
+          "border=none vspace=0></a>");
+        document.writeln("<a name='dummy1'></a>");
+      }
+      else {
+        document.writeln("<a href='javascript:doEdit()' onMouseDown=doMouseDown(2) " +
+          "onMouseUp=doMouseUp(2)><img src='images/edit.gif' border=none vspace=0></a>");
+      }
+    </script>
+    </td></tr>
+
+    <tr><td align=center>
+    <a href="#dummy2" onClick=javascript:doHelp()
+      onMouseDown=doMouseDown(3) onMouseUp=doMouseUp(3)><img src="images/help.gif"
+      border=none vspace=0></a>
+    <a name="dummy2"></a>
+    </td></tr>
+
+    <tr><td align=center>
+    <script language="JavaScript">
+      if (agent.indexOf("msie") != -1) {
+        document.writeln("<a href='#dummy3' onClick=doLogout() " +
+          "onMouseDown=doMouseDown(4) onMouseUp=doMouseUp(4)><img src='images/logout.gif'" +
+          "border=none vspace=0></a>");
+        document.writeln("<a name='dummy3'></a>");
+      }
+      else {
+        document.writeln("<a href='javascript:doLogout()' onMouseDown=doMouseDown(4) " +
+          "onMouseUp=doMouseUp(4)><img src='images/logout.gif' border=none vspace=0></a>");
+      }
+    </script>
+    </td></tr>
+
+    </table>
+    </td>
+
+    </tr>
+
+    </table>
+
+
+  </body>
+
+</html>

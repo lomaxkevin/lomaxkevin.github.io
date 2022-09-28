@@ -1,0 +1,40 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/cal.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+[class*="node-type-site-calendar"] #left {    
+    box-sizing: border-box;
+    -webkit-flex: 1 1 25%;
+    flex: 1 1 20%;
+    margin-right: 0px;
+}
+
+[class*="node-type-site-calendar"] #middle, [class*="node-type-site-calendar"] #middle * {
+    max-width: 100%; 
+}
+
+[class*="node-type-site-calendar"] #middle {
+    flex-basis: 75%;
+    z-index: 1;
+}
+
+[class*="node-type-site-calendar"] #right {
+    display: none;
+}
+
+
+
+
+
+#cal-slider-wrapper {
+    height: 150px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+
+#cal-block-wrap {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+#cal-block-wrap .upcomingEventRow{
+    border-bottom: 1px solid #000;
+}

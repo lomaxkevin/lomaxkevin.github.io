@@ -1,0 +1,26 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/central-today.css,v 1.1 2018/10/10 19:01:03 alvisoj Exp $ */
+.page-news #content {
+	padding:0
+}
+.page-news #left .content {
+	/*padding:4px 2px*/
+}
+.page-news #left {
+	/*width:250px*/
+}
+.page-news #right .content {
+	padding:2px 0px
+}
+.page-news .form-item,.page-news .form-actions {
+	margin-top:0
+}
+.page-news #mid-right-wrapper {
+	width:700px
+}
+.page-news #wrapper {
+	/*width:950px*/
+    width: auto;
+}
+.rssimg {
+	display:none
+}

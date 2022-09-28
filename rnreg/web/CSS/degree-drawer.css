@@ -1,0 +1,264 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/degree-drawer.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+/* degree drawer */
+
+
+
+
+/*----------------------------- from main -----------------------*/
+
+/* Begin Degree Drawer
+   ========================================================================== */
+
+.eva-degree-drawer {
+	padding: 0 20px;
+	box-sizing: border-box;
+	background-color: #e7d1b9;
+}
+
+.eva-degree-drawer .views-field-field-contact-email {
+	display: inline-block;
+	width: 100%;
+	margin: 35px 0 10px 0;
+	font-weight: 700;
+}
+@media only screen and (min-width: 1000px) {
+	.eva-degree-drawer .views-field-field-contact-email {
+		font-size: 110%;
+	}
+}
+
+.eva-degree-drawer .views-field-field-contact-website {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 1000px) {
+	.eva-degree-drawer .views-field-field-contact-website {
+		font-size: 110%;
+	}
+}
+
+.eva-degree-drawer .views-field-field-contact-website a {
+	color: #000;
+}
+
+@media only screen and (min-width: 1000px) {
+	.eva-degree-drawer .view-content {
+		width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+.views-label-field-description,
+.views-label-field-contact-information,
+.views-label-field-opportunities,
+.views-label-field-why-this-program {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 110%;
+	font-weight: 400;
+}
+@media only screen and (min-width: 1000px) {
+	.views-label-field-description,
+	.views-label-field-contact-information,
+	.views-label-field-opportunities,
+	.views-label-field-why-this-program {
+		font-size: 175%;
+		font-weight: 400;
+	}
+}
+
+.views-field-field-description .field-content,
+.views-field-field-contact-information .field-content,
+.views-field-field-opportunities .field-content,
+.views-field-field-why-this-program .field-content {
+	margin: 0 0 15px 40px;
+}
+@media only screen and (min-width: 1000px) {
+	.views-field-field-description .field-content,
+	.views-field-field-contact-information .field-content,
+	.views-field-field-opportunities .field-content,
+	.views-field-field-why-this-program .field-content {
+		margin-left: 80px;
+	}
+}
+
+.views-field-field-why-this-program {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.views-label-field-description:before,
+.views-label-field-contact-information:before,
+.views-label-field-opportunities:before,
+.views-label-field-why-this-program:before {
+	box-sizing: border-box;
+	content: '+';
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin: 3px 20px 0 0;
+	font-size: 80%;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.field-open .views-label-field-description:before,
+.field-open .views-label-field-contact-information:before,
+.field-open .views-label-field-opportunities:before,
+.field-open .views-label-field-why-this-program:before {
+	content: '-';
+	position: relative;
+	padding-top: 3px;
+	left: -7px;
+	height: 25px;
+	width: 25px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	line-height: 1;
+	text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+	.field-open .views-label-field-description:before,
+	.field-open .views-label-field-contact-information:before,
+	.field-open .views-label-field-opportunities:before,
+	.field-open .views-label-field-why-this-program:before {
+		padding-top: 0;
+	}
+}
+
+.eva-degree-drawer .views-field-nothing .field-content {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	padding: 5px;
+	background-color: #a30f37;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* End Degree Drawer
+   ========================================================================== */
+
+
+/*----------------------------- from sp_ua ----------------------*/
+
+
+.degree-drawer {
+    padding: 2em;
+}
+
+.degree-drawer .views-field-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.degree-drawer .views-field-field-degree-type .field-content {
+    font-size: 22px;
+}
+
+.degree-drawer .views-field-field-contact-email {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+/*field-name-field-program-reference*/
+.degree-drawer .views-field-field-contact-website,
+.degree-drawer .field-name-field-visit-our-website,
+.degree-drawer .field-name-field-program-reference {
+    font-size: 20px;
+    line-height: 1;
+    /*margin-left: 192px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.degree-drawer .views-field-field-contact-website a:hover {
+    color: #a30f37;
+}
+
+.degree-drawer .views-label-field-degree-type {
+    display: none;
+}
+
+.degree-drawer .views-field-field-contact-email .field-content {
+    font-weight: 300;
+}
+
+.degree-drawer .views-field-field-contact-website .views-label {
+    display: none;
+}
+
+.degree-drawer .views-field-field-contact-website .field-content {
+    font-weight: 300;
+}
+
+.degree-drawer {
+    position: relative;
+}
+
+.views-label-field-description::before,
+.views-label-field-contact-information::before,
+.views-label-field-opportunities::before,
+.views-label-field-why-this-program::before {
+    box-sizing: border-box;
+    content: '+';
+    float: left;
+    height: 25px;
+    width: 25px;
+    margin: -3px 20px 0 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.field-open .views-label-field-description::before,
+.field-open .views-label-field-contact-information::before,
+.field-open .views-label-field-opportunities::before,
+.field-open .views-label-field-why-this-program::before {
+    content: '-';
+    position: relative;
+    padding-top: 0px;
+    margin: 4px 20px 0 0;
+    left: -7px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+}
+
+.views-label-field-description,
+.views-label-field-contact-information,
+.views-label-field-opportunities,
+.views-label-field-why-this-program {
+    font-size: 26px;
+    font-weight: 100;
+    margin-bottom: 4px;
+    /* perceived 10px margin-bottom (font*line-height - font / 2 + 4 ~= 10px)*/
+}
+
+.views-field-field-description .field-content,
+.views-field-field-contact-information .field-content,
+.views-field-field-opportunities .field-content,
+.views-field-field-why-this-program .field-content {
+    margin-left: 66px;
+}
+
+.eva-degree-drawer .views-field-nothing .field-content {
+    padding: 8px 24px;
+}
+
+.views-field-field-header-links li a {
+    color: #fff;
+}
+
+.views-field-field-header-links li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, .3);
+}
+
+
+/*----------------------------- from mr* -------------------------*/

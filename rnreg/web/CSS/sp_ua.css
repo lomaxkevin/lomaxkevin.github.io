@@ -1,0 +1,1597 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/sp_ua.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+/* info:
+red: #dc2155  just for header
+main red: #a30f37
+background image fallback fill: #A08B69
+*/
+
+#special-pages-links {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/***** globals *****/
+
+
+html,
+body {
+    font-size: 18px;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Roboto, sans-serif;
+}
+
+[class*="node-type-sp"] #wrapper h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.16;
+    text-transform: uppercase;
+}
+
+[class*="node-type-sp"] #wrapper h2 {
+    font-family: Roboto, sans-serif;
+    /*font-size: 2em;*/
+    font-weight: 300;
+    line-height: 1.18;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    color: #a30f37;
+}
+
+[class*="node-type-sp"] #wrapper h3 {
+    font-family: Roboto, sans-serif;
+    /*font-size: 2em;*/
+    font-weight: 500;
+    line-height: 1.18;
+    padding-bottom: 0.5em;
+    /*text-transform: uppercase;*/
+    color: #777;
+}
+
+
+/****** SPECIAL PAGES STYLES *****/
+
+
+/*print-link causing spacing issues */
+
+.print-link {
+    display: none
+}
+
+[class*="node-type-sp"] #intro-wrapper {
+    background: none;
+}
+
+[class*="node-type-sp"] #header-top {
+    position: relative;
+    z-index: 9;
+}
+
+[class*="node-type-sp"] #header-bot {
+    margin-bottom: -80px;
+    z-index: 99;
+}
+
+[class*="node-type-sp"] #header-bot {
+    margin-bottom: -125px;
+}
+
+[class*="node-type-sp"] #wrapper,
+[class*="node-type-sp"] #content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    /*! margin-top: -110px; */
+}
+
+[class*="node-type-sp"] .banner-outer {
+    background: #A08B69;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+[class*="node-type-sp"] .banner-outer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+[class*="hero-description"] {
+    max-width: 30em;
+    margin: auto;
+}
+
+
+/*--- Nav-bar Sub menu ---*/
+
+[class*="sp-nav"] .field-type-link-field {
+    /* .field-name-field-sp-ua-links{*/
+    width: 100%;
+    /*! min-height: 5em; */
+    height: 100%;
+    background-color: rgb(163, 15, 55);
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+[class*="sp-nav"] .field-type-link-field .field-items {
+    max-width: auto;
+    margin: auto;
+    border-left: 1px solid #fff;
+}
+
+[class*="sp-nav"] .field-type-link-field .field-items .field-item {
+    display: inline-block;
+    /*! width:10em; */
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 5em;
+    text-align: center;
+    max-width: 170px;
+}
+
+[class*="sp-nav"] .field-type-link-field .field-items div a {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding: 1.75em 1em .5em 1em;
+    color: white;
+    text-align: center;
+    /*! vertical-align: middle; */
+    font-size: .875em;
+    font-weight: 500;
+}
+
+[class*="sp-nav"] .field div div a:visited {}
+
+[class*="sp-nav"] .field div div:hover {
+    background-color: rgb(139, 7, 43);
+}
+
+[class*="sp-nav"] .field div div a:active {
+    color: #dc2155;
+    background-color: rgb(139, 7, 43);
+}
+
+
+/*--- END -- Nav-bar Sub menu ---*/
+
+
+/*div[class*="group-sp"]*/
+
+.group-sp-why {
+    height: 100%;
+    width: 100%;
+    padding: 1em 0em 2em 0em;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.group-sp-why .group-sp-why-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+.group-sp-why .group-sp-why-wrap h2 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 33%;
+}
+
+.group-sp-why .group-sp-why-wrap.full-width h2 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 0;
+}
+
+#content .group-sp-why h3 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: initial;
+    padding: 1em 0 0 0;
+}
+
+#content .group-sp-why h3:first-child {
+    padding-top: 0;
+}
+
+.group-sp-why-content [class*="body"] {
+    box-sizing: border-box;
+    width: 66%;
+    padding-right: 1em;
+    float: left;
+}
+
+.group-sp-why-content [class*="aside"] {
+    box-sizing: border-box;
+    width: 33%;
+    padding-left: 1em;
+    float: left;
+}
+
+.group-sp-why-content [class*="aside"] img {
+    padding-bottom: .25em;
+    border-bottom: 2px solid #a30f37;
+    max-width: 100%;
+}
+
+.group-sp-why-content [class*="aside"] .aside-visit {
+    width: 100%;
+    max-width: inherit;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 2px solid #a30f37;
+    text-align: center;
+}
+
+.aside-visit ul {
+    list-style-type: none;
+    padding: 0 0 0 0 !important;
+    margin: 1em 2em 1em 1em!important;
+}
+
+.aside-visit ul li {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    margin: auto;
+    width: 100%;
+}
+
+.aside-visit ul li a {
+    display: block;
+    min-height: 4em;
+    padding-left: 1em;
+    padding-right: .5em;
+    background: #a30f37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.aside-visit ul li a img {
+    width: auto !important;
+    padding-right: 1em
+}
+
+.aside-visit ul li a span {
+    width: 100%;
+}
+
+.group-sp-why .field-name-field-sp-ua-why-aside div {}
+
+.group-sp-why .field-name-field-sp-ua-why-aside div div {}
+
+[class*="middle-bg-wrap"] {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/middle_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ua-middle-bg-wrap {
+    background-position: 50% 80%;
+}
+
+.ol-middle-bg-wrap {
+    background-position: 50% 45%;
+}
+
+[class*="cta-wrap"] {
+    padding: 2em 0 4em 0;
+}
+
+[class*="cta-wrap"] .field {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+[class*="cta"][class*="title"] {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #a30f37;
+}
+
+#wrapper [class*="cta"][class*="title"] {
+    margin: auto;
+}
+
+[class*="cta"][class*="description"] p {
+    width: 80%;
+    margin: 1em auto;
+}
+
+[class*="cta-action"] .field-items {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+[class*="cta-action"] .field-items .field-item {
+    display: inline-block;
+    width: 20%;
+    margin: 0 auto;
+    height: 300px;
+    /*! float:left; */
+}
+
+[class*="cta-action"] .field-items .field-item p {
+    width: 150px;
+    min-height: 3em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    /*!  */
+}
+
+[class*="cta-action"] .field-items .field-item p a {
+    display: inline-block;
+    padding-top: 168px;
+    vertical-align: top;
+}
+
+.cta-icon-wrap {
+    width: 150px;
+    height: 150px;
+    padding: 75px;
+    margin: 0 0 -150px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1 !important;
+    /*background-color:rgba(255,255,255,.4); icons changed - now have white bg included*/
+    border-radius: 50%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.cta-icon-wrap img {
+    height: auto;
+    display: block;
+    width: 99px;
+    margin: -49.5px;
+    font-size: 10px;
+}
+
+[class*="contact-wrap"] {
+    background-color: #333;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/contact-all-bg_1-2400.jpg");
+    background-position: 50% 0%;
+    background-size: cover;
+    color: #fff;
+    font-weight: 100;
+}
+
+[class*="contact-wrap"] [class*="content"] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 3em 2em 3em 2em;
+}
+
+#wrapper [class*="contact-wrap"] [class*="content"] [class*="title"] {
+    color: #fff;
+}
+
+[class*="contact-wrap"] [class*="content"] p {
+    max-width: 600px;
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] {
+    margin: 2em 0;
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] p {
+    display: inline-block;
+    width: 14em;
+    text-align: center;
+    line-height: 1;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] p a {
+    display: block;
+    padding: .5em 3em;
+    color: #fff;
+    font-weight: 400;
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] p a:visited {
+    color: #ccc;
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] p a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+[class*="contact-wrap"] [class*="content"] [class*="links"] p a:active {
+    color: #dc2155;
+}
+
+[class*="contact-wrap"] [class*="email-wrap"] > div {
+    display: inline-block;
+}
+
+[class*="contact-wrap"] [class*="phone"] {
+    width: 10em;
+    margin-left: 2em;
+    position: relative;
+}
+
+[class*="contact-wrap"] [class*="phone"].field-type-telephone:before {
+    content: " ";
+    position: absolute;
+    width: 28px;
+    height: 32px;
+    left: -1.75em;
+    top: -2px;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/contact-all-icon_phone.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+[class*="contact-wrap"] [class*="email"].field-type-email {
+    width: 10em;
+    margin-left: 2em;
+    position: relative;
+}
+
+[class*="contact-wrap"] [class*="contact-email"].field-type-email:before {
+    content: " ";
+    position: absolute;
+    width: 28px;
+    height: 32px;
+    top: -2px;
+    left: -2em;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/contact-all-icon_email.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+[class*="contact-wrap"] [class*="contact-email"].field-type-email a {
+    color: #fff;
+}
+
+
+/* calendar */
+
+#wrapper [class*="cal-wrap"] {
+    background: #414141;
+    overflow: hidden;
+}
+
+[class*="cal-wrap"] .group-sp-cal-inner-wrap {
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/calendar_background.png");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.group-sp-cal-title-wrap,
+.group-sp-cal-dates-wrap {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    color: #fff !important;
+}
+
+.group-sp-cal-title-wrap {
+    padding: 0em 6em;
+    text-align: right;
+    width: 66%;
+}
+
+.group-sp-cal-title-wrap [class*="calendar-link"],
+.group-sp-cal-title-wrap [class*="cal-link"] {
+    border: 1px solid #fff;
+    display: inline-block;
+    margin: 1em 2px;
+}
+
+.group-sp-cal-title-wrap [class*="calendar-link"] a,
+.group-sp-cal-title-wrap [class*="cal-link"] a {
+    display: inline-block;
+    padding: .5em 2em;
+    margin-top: 0px;
+}
+
+.group-sp-cal-title-wrap [class*="calendar-link"] a:hover,
+.group-sp-cal-title-wrap [class*="cal-link"] a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.group-sp-cal-dates-wrap {
+    width: 33%;
+    text-align: left;
+    /*! padding-left:2em; */
+    margin-bottom: 1em;
+}
+
+#wrapper .group-sp-cal-dates-wrap p {
+    margin-bottom: 0;
+}
+
+#wrapper h3.field-name-field-sp-date-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 2px 0;
+}
+
+.field-name-field-sp-date-alert {
+    display: inline-block;
+    font-size: .75em;
+    text-transform: uppercase;
+    padding: 1px 1em;
+    margin-bottom: 4px;
+    background-color: #ffb100;
+    border-radius: 4px;
+}
+
+.field-name-field-sp-date-info-item,
+.field-name-field-sp-date-time-item {
+    font-size: .75em;
+    font-weight: 100;
+    margin-left: .125em;
+}
+
+.field-name-field-sp-date-info-item:before {
+    content: " ";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-bottom: -2px;
+    margin-right: 3px;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/calendar_icon-info.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50;
+}
+
+.field-name-field-sp-date-time-item {}
+
+.field-name-field-sp-date-time-item:before {
+    content: " ";
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-bottom: -2px;
+    margin-right: 3px;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/calendar_icon-time.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50;
+}
+
+.group-sp-cal-title-wrap a,
+.group-sp-cal-title-wrap h2,
+.group-sp-cal-dates-wrap h3,
+.group-sp-cal-dates-wrap a {
+    color: #fff !important;
+}
+
+.group-date-wrap {
+    margin-bottom: 2em;
+}
+
+.group-date-wrap div {
+    display: inline-block;
+}
+
+.group-sp-cal-mm-dd {
+    width: 4em;
+    margin-right: -4em;
+}
+
+.group-sp-date-body-wrap {
+    margin-left: 4em;
+    box-sizing: border-box;
+}
+
+.group-sp-cal-mm-dd .group-corner {
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    overflow: visible;
+}
+
+.group-sp-cal-mm-dd .field-name-field-sp-date-day {
+    padding: 0 0 0 .25em;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.group-sp-cal-mm-dd .group-corner p {
+    height: 2em;
+    margin: -1em 1em 0 .5em;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* rank */
+
+#wrapper [class*="rank-wrap"] {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    padding: 3em 0;
+}
+
+#wrapper [class*="rank-wrap"] h3,
+#wrapper [class*="rank-wrap"] p {}
+
+#wrapper [class*="rank-wrap"] h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #555;
+    font-size: 1.75em;
+}
+
+#wrapper [class*="rank-wrap"] p.field-name-field-sp-v-rank-attr {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+#wrapper [class*="rank-link"] {
+    width: 15em !important;
+    padding: .75em;
+    margin: auto;
+    margin-top: 2em !important;
+    border: 2px solid #a30f37;
+    border-radius: 2px;
+}
+
+#wrapper [class*="rank-link"] a {
+    font-weight: 500;
+    padding: 0 2em;
+}
+
+[class*="degrees-wrap"] {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-top: 1px solid #A08B69;
+    padding: 2em 0 3em 0;
+    text-align: center;
+}
+
+[class*="degrees-wrap"] [class*="degrees-content"] {
+    position: relative;
+    height: 100%;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"] {
+    /*! background-color: #FFF8EB; */
+    box-sizing: border-box;
+    width: 50%;
+    padding: .75em 1em;
+    float: left;
+    /*! border:1em solid #EFE4D1; */
+    text-align: left;
+    line-height: 2.15em;
+}
+
+#wrapper [class*="degrees-wrap"] [class*="degrees-group"] .field {
+    background-color: rgba(255, 248, 235, 0.4);
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 32px;
+    /*! margin: 0 !important; */
+}
+
+#wrapper [class*="degrees-wrap"] [class*="degrees-group"] .field:first-child {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 14px;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"] .field-items {
+    font-weight: 400;
+    color: #555;
+    font-size: .75em;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"] .field-items a {
+    color: #555;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"] .field-items a:hover {
+    color: #a30f37;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"] .field-items:first-child {
+    margin-top: -1em;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"]:first-child {
+    border-left: none;
+}
+
+[class*="degrees-wrap"] [class*="degrees-group"]:last-child {
+    border-right: none;
+    line-height: 3em;
+    /* height fix - update if more items are added to this list */
+}
+
+[class*="career-opportunities-title"] {
+    text-align: center;
+    margin: 2em 0 0 0 !important;
+}
+
+.field-career-opportunity-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 1em 0 3em 0;
+}
+
+
+/*
+.field-career-opportunity-wrapper .field-career-opportunity {
+width: 100%;
+max-width: 200px;
+box-sizing: border-box;
+margin: .5em;
+padding-bottom: 1em;
+background-color: #fff;
+font-size:13px;
+text-transform: uppercase;
+}
+.field-career-opportunity-wrapper .field-career-opportunity p {
+
+display: inline-block;
+}
+.field-career-opportunity-wrapper .field-career-opportunity img {
+width:100%;
+}
+*/
+
+.field-name-field-sp-cl-single-video-title {}
+
+.field-name-field-sp-cl-single-video iframe {
+    min-height: 30em;
+}
+
+.group-sp-pfc-numbers {
+    clear: both;
+    background-color: #fff;
+}
+
+.group-sp-pfc-numbers [class*="title"] {
+    font-family: Roboto, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+}
+
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap {
+    width: 100%;
+    background-color: #515151;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field {
+    display: inline-block;
+    /*margin: 0 2em;
+    padding: 2em 2em;*/
+    vertical-align: top;
+    color: #fff !important;
+    font-size: 1.25em;
+}
+
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field .field-items {
+    height: 1em;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    padding: .5em 1.5em .75em 5em;
+}
+
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field:first-child .field-items,
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field:last-child .field-items {
+    border: none;
+}
+
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field .field-items a {
+    color: #fff;
+    display:block;
+    width:100%;
+    padding: 0px 3px;
+
+}
+.group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field .field-items a:hover {
+    color: #dc2155;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.field-name-field-sp-pfc-net-price-calc .field-item,
+.field-name-field-sp-pfc-room-board .field-item,
+.field-name-field-sp-pfc-tuition .field-item {
+    position: relative;
+}
+
+.field-name-field-sp-pfc-net-price-calc .field-item:before,
+.field-name-field-sp-pfc-room-board .field-item:before,
+.field-name-field-sp-pfc-tuition .field-item:before {
+    content: " ";
+    position: absolute;
+    top: -25px;
+    left: -80px;
+    width: 100px;
+    height: 80px;
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/icons/icon_calc_lg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.field-name-field-sp-pfc-room-board .field-item:before {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/icons/icon_dollar_lg.png");
+}
+
+.field-name-field-sp-pfc-tuition .field-item:before {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/images/icons/icon_cap_lg.png");
+}
+
+.hybrid-class-marker {
+    display: inline-block;
+    position: relative;
+}
+
+.field-name-field-sp-ol-degrees-description .hybrid-class-marker:before {
+    content: "H";
+    position: absolute;
+    left: -2em;
+    top: 10%;
+    display: inline-block;
+    font-size: 13px;
+    height: 18px;
+    width: 18px;
+    color: #a30f37;
+    /*! padding: 2px 1px 0px 1px; */
+    /*! margin: -10px -8px -8px -8px; */
+    border: 1px solid #a30f37;
+    line-height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.group-sp-degrees-group .hybrid-class-marker:after {
+    content: "H";
+    position: absolute;
+    right: -2em;
+    top: 33%;
+    display: inline-block;
+    font-size: 13px;
+    height: 18px;
+    width: 18px;
+    color: #a30f37;
+    /*! padding: 2px 1px 0px 1px; */
+    /*! margin: -10px -8px -8px -8px; */
+    border: 1px solid #a30f37;
+    line-height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.field-name-field-sp-cl-single-video-title {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.fin-aid-checklist {}
+
+.fin-aid-checklist {
+    list-style: none;
+    border: 1px solid #979797;
+    background-color: #fcfcfc;
+    padding: 1em 2em;
+}
+
+.fin-aid-checklist li {
+
+    position: relative;
+    margin-left: 2em;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.fin-aid-checklist li:before {
+    content: " ";
+    position: absolute;
+    left: -32px;
+    top: 0px;
+    display: block;
+    height: 32px;
+    width: 32px;
+    margin-bottom: -14px;
+    background-image: url("../img/check-box.svg");
+}
+
+.fin-aid-checklist li:first-child:before {
+     background-image: none;
+}
+
+#wrapper .fin-aid-checklist li:first-child {
+    margin: 0;
+    padding-left: 0;
+}
+
+#wrapper .fin-aid-checklist li h3 {
+    color: #a30f37;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+.pfc-dollar-sign {
+    position: relative;
+    margin-left: 24px;
+}
+
+.pfc-dollar-sign:before {
+    content: " ";
+    position: absolute;
+    left: -24px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-small-dollar.svg");
+    background-repeat: no-repeat;
+}
+
+.field-name-field-sp-cl-single-video-title {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.view-display-id-homepage_list {
+    width: 100%;
+}
+
+.view-display-id-homepage_list.eva-degree-slideshow {
+    border: none;
+}
+
+.group-sp-programs {
+    padding: 4em 0;
+}
+
+.group-sp-programs .field-type-blockreference {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.group-sp-programs .field-type-blockreference .view-id-degree_drawer {
+    padding: 0;
+}
+
+.why-alt {
+    background-color: #E2D3BA;
+    position: relative;
+    padding: 3em 0 0 0;
+}
+
+.why-alt .degrees-programs h2 {
+    width: 40%;
+    padding-right: 0;
+}
+
+.why-alt .degrees-programs [class*="why-body"] {
+    width: 40%;
+}
+
+.why-alt .degrees-programs [class*="why-aside"] {
+    width: 60%;
+    max-width: inherit;
+    position: relative;
+    right: 0;
+    top: -120px;
+    margin-bottom: -100px;
+}
+
+#wrapper .why-alt .degrees-programs [class*="why-aside"] h3 {
+    color: #a30f37;
+    text-align: center;
+}
+
+#wrapper .why-alt .degrees-programs [class*="why-aside"] ul {
+    border: 1px solid #fff;
+    list-style-type: none;
+    padding: 2em;
+    margin-top: 1.5em;
+    background: #EFE4D1;
+    border-radius: 2px;
+}
+
+#wrapper .why-alt .degrees-programs [class*="why-aside"] ul li a {
+    display: block;
+    padding: 5px;
+    color: #414141;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+#wrapper .why-alt .degrees-programs [class*="why-aside"] ul li a:hover {
+    color: #a30f37;
+}
+
+
+/* Overrides from main stylesheet */
+
+#wrapper .bg-wrapper-section-6 h2 {
+    padding-top: 0;
+    padding-bottom: 96px;
+    margin-bottom: 1.5em !important;
+    background: url(/programs/sites/all/themes/cwu_programs/img/pride.png) no-repeat 50% 100%;
+    color: #a30f37;
+}
+
+#wrapper .bg-wrapper-section-5 .views-field.views-field-nothing {
+    display: none;
+}
+
+p.field-points-of-pride-statement {
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #888;
+}
+
+.views-field-field-header-links li a {
+    /*use brighter red */
+    color: #dc2155;
+}
+
+.field-name-field-contact-website a {
+    padding: 4px 8px;
+    font-size: .9em;
+    margin-top: 10px;
+}
+
+.hands-on-learning-label {
+    font-size: 13px;
+}
+
+.degree-drawer {
+    padding: 2em;
+}
+
+.degree-drawer .views-field-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.degree-drawer .views-field-field-degree-type .field-content {
+    font-size: 22px;
+}
+
+.degree-drawer .views-field-field-contact-email {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+/*field-name-field-program-reference*/
+.degree-drawer .views-field-field-contact-website,
+.degree-drawer .field-name-field-visit-our-website,
+.degree-drawer .field-name-field-program-reference {
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 192px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.degree-drawer .views-field-field-contact-website a:hover {
+    color: #a30f37;
+}
+
+.degree-drawer .views-label-field-degree-type {
+    display: none;
+}
+
+.degree-drawer .views-field-field-contact-email .field-content {
+    font-weight: 300;
+}
+
+.degree-drawer .views-field-field-contact-website .views-label {
+    display: none;
+}
+
+.degree-drawer .views-field-field-contact-website .field-content {
+    font-weight: 300;
+}
+
+.degree-drawer {
+    position: relative;
+}
+
+.views-label-field-description::before,
+.views-label-field-contact-information::before,
+.views-label-field-opportunities::before,
+.views-label-field-why-this-program::before {
+    box-sizing: border-box;
+    content: '+';
+    float: left;
+    height: 25px;
+    width: 25px;
+    margin: -3px 20px 0 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.field-open .views-label-field-description::before,
+.field-open .views-label-field-contact-information::before,
+.field-open .views-label-field-opportunities::before,
+.field-open .views-label-field-why-this-program::before {
+    content: '-';
+    position: relative;
+    padding-top: 0px;
+    margin: 4px 20px 0 0;
+    left: -7px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+}
+
+.views-label-field-description,
+.views-label-field-contact-information,
+.views-label-field-opportunities,
+.views-label-field-why-this-program {
+    font-size: 26px;
+    font-weight: 100;
+    margin-bottom: 4px;
+    /* perceived 10px margin-bottom (font*line-height - font / 2 + 4 ~= 10px)*/
+}
+
+.views-field-field-description .field-content,
+.views-field-field-contact-information .field-content,
+.views-field-field-opportunities .field-content,
+.views-field-field-why-this-program .field-content {
+    margin-left: 66px;
+}
+
+.eva-degree-drawer .views-field-nothing .field-content {
+    padding: 8px 24px;
+}
+
+.views-field-field-header-links li a {
+    color: #fff;
+}
+
+.views-field-field-header-links li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, .3);
+}
+
+#splash-buttons .button {
+    color: #fff;
+}
+
+#splash-buttons a.button:hover {
+    background: rgba(255, 255, 255, .3);
+}
+
+.programs-select-search select {
+	background: url(/programs/sites/all/themes/cwu_programs/img/triangle.png) no-repeat #A30F37;
+	background-position: right 10px top 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 0;
+	color: #FFF;
+	font-size: 120%;
+	padding: 8px 60px 8px 20px;
+	border-radius: 1px;
+	margin: 10px 0;
+	max-width: 400px;
+}
+
+.programs-box-search input{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	font-size: 150%;
+	padding: 0 100px 0 12px;
+	border: 0;
+}
+
+.programs-box-search input {
+	border: 3px solid #AB0034;
+	border-radius: 1px;
+	max-width: 400px;
+	position: relative;
+	margin: 0 auto;
+	height: 40px;
+}
+.programs-box-search div.form-type-textfield {
+  position: relative;
+  width:100%;
+  max-width: 400px;
+}
+.programs-box-search .form-type-textfield::before {
+  content: " ";
+	position: absolute;
+  height:30px;
+  width:40px;
+	top: 5px;
+	right: 20px;
+  z-index: 1;
+
+	/*text-indent: -9999px;*/
+	background-color: #FFF;
+	border-left: 1px solid #A30F37;
+	border-radius: 0;
+	background: url(/programs/sites/all/themes/cwu_programs/img/glass_red.png) 16px 5px no-repeat;
+
+}
+.programs-box-search .views-widget-filter-title {
+		padding: 4em 0 0 0;
+}
+.programs-select-search .form-type-select,
+.programs-box-search .views-widget-filter-title {
+	float:none;
+	width:100%;
+  max-width: 400px;
+
+
+  margin: auto !important;
+  display: block !important;
+  text-align: center;
+}
+.programs-select-search .form-type-select {
+    padding: 0 0 4em 0;
+}
+/***** PAGE SPECIFIC *****/
+
+[class*="node-sp-degrees-and-programs"] .group-sp-cta-wrap {
+    padding: 4em 0 3em 0;
+}
+
+[class*="node-sp-degrees-and-programs"] .group-sp-cta-action-wrap .field-name-field-sp-ua-cta-action {
+    padding: 0 0 4em 0;
+    border-bottom: 1px solid #777;
+}
+
+
+/*- Hero bg -*/
+
+.banner-middle {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.node-type-sp-undergrad-admissions .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-undergraduate_admissions1200.jpg");
+}
+
+.node-type-sp-online-learning .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-online_learning1200.jpg");
+}
+
+.node-type-sp-visit .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-visit_campus1200.jpg");
+}
+
+.node-type-sp-campus-life .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-campus_life1200.jpg");
+}
+
+.node-type-sp-paying-for-college .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-payinig_for_college1200.jpg");
+}
+
+.node-type-sp-degrees-and-programs .banner-outer {
+    background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero_programs_degree1200.jpg");
+}
+
+#page.front #intro-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-home1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/***** Marty's fixes (base styles: to-be implemented in appropriate ss) *****/
+
+@import url('mr-sheet.css');
+
+/***** MEDIA QUERIES *****/
+
+@media only screen and (min-width:1000px) {
+    /*fix this in main - delete rule*/
+    .views-field-field-description .field-content {
+        margin-left: 66px !important;
+    }
+    .field-name-field-contact-info-group .field-items {
+        overflow: hidden;
+        text-align: right;
+    }
+    .field-name-field-contact-info-group .field-items .field {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .field-name-field-email-contact-email a {
+        color: transparent;
+        padding: 0 0 0 1.5em;
+        margin-top: 4px;
+    }
+    .field-name-field-email-contact-email a:hover,
+    .field-name-field-email-contact-email a:active,
+    .field-name-field-email-contact-email a:visited {
+        color: transparent;
+    }
+    .field-name-field-contact-name {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    [class*="sp-nav"] .field-type-link-field .field-items .field-item a {
+        font-size: .75em;
+        max-width: 130px;
+    }
+    .group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field {
+        font-size: 1.125em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    [class*="node-type-sp"] #header-bot {
+        margin-bottom: -50px;
+    }
+    #wrapper h2 {
+        font-size: 1.4em;
+    }
+    /* sub-menu */
+    [class*="sp-nav"] .field {
+        /* .field-name-field-sp-ua-links{*/
+        height: auto;
+    }
+    [class*="sp-nav"] .field div {
+        max-width: 768px;
+        border-left: none;
+    }
+    [class*="sp-nav"] .field-type-link-field .field-items .field-item {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 1em;
+        max-width: 768px;
+        vertical-align: top;
+    }
+    [class*="sp-nav"] .field-type-link-field .field-items .field-item a {
+        display: block;
+        width: 768px;
+        padding: 0.75em 0em 0.75em 2em;
+        text-align: left;
+        max-width: 768px;
+    }
+    [class*="sp-nav"] .field div div a:after {
+        content: " >";
+        padding: 0 0 0 0.25em;
+        font-weight: 700;
+        color: #A08B69;
+    }
+    /* why section */
+    .group-sp-why .group-sp-why-wrap {
+        max-width: 768px;
+    }
+    .group-sp-why .group-sp-why-wrap h2 {
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 0;
+    }
+    .group-sp-why-content [class*="body"] {
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: 1em;
+        float: none;
+    }
+    .group-sp-why-content [class*="aside"] {
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 2em;
+        padding-left: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
+        float: none;
+        border-top: 1px solid #ddd;
+    }
+    .group-sp-cta-wrap {
+        padding-top: 4em;
+    }
+    [class*="cta-action"] .field-items {
+        text-align: center;
+        max-width: 768px;
+    }
+    [class*="cta-action"] .field-items .field-item {
+        display: inline-block;
+        width: 40% !important;
+        /* important - prevents override from mr-sheet */
+        margin: auto;
+        height: 300px;
+    }
+    [class*="cta-action"] .field-items .field-item .cta-icon-wrap {
+        width: 150px;
+        height: 150px;
+        padding: 75px;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        line-height: 1 !important;
+    }
+    [class*="cta-action"] .field-items .field-item.even {
+        clear: left;
+    }
+    [class*="degrees-wrap"] [class*="degrees-group"] {
+        float: none;
+        width: 100%;
+    }
+    .group-sp-cal-title-wrap,
+    .group-sp-cal-dates-wrap {
+        display: block;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 1em;
+        color: #fff !important;
+    }
+    .group-sp-cal-title-wrap {
+        width: 100%;
+    }
+    .group-sp-cal-dates-wrap {
+        float: right;
+        min-width: 320px;
+        overflow: hidden;
+    }
+    .group-sp-cal-title-wrap .field-name-field-sp-v-calendar-link {
+        min-width: 18em;
+        text-align: center;
+    }
+    .why-alt .degrees-programs [class*="why-body"] {
+        width: auto;
+    }
+    .why-alt .degrees-programs [class*="why-aside"] {
+        width: auto;
+        max-width: 768px;
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-bottom: 0;
+    }
+    .group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field {
+        display: block;
+    }
+    .group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field .field-items {
+        padding:1em;
+        border: none;
+
+    }
+    .field-name-field-sp-pfc-net-price-calc .field-item:before,
+    .field-name-field-sp-pfc-room-board .field-item:before,
+    .field-name-field-sp-pfc-tuition .field-item:before {
+        left:30%;
+        top:0px;
+        width:40px;
+        display:none;
+    }
+    .group-sp-pfc-numbers .group-sp-pfc-numbers-wrap .field .field-items a {
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding:.5em 0;
+    }
+    .node-type-sp-undergrad-admissions .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-undergraduate_admissions768.jpg");
+    }
+    .node-type-sp-online-learning .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-online_learning768.jpg");
+    }
+    .node-type-sp-visit .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-visit_campus768.jpg");
+    }
+    .node-type-sp-campus-life .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-campus_life768.jpg");
+    }
+    .node-type-sp-paying-for-college .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-payinig_for_college768.jpg");
+    }
+    .node-type-sp-degrees-and-programs .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero_programs_degree768.jpg");
+    }
+    #page.front #intro-wrapper {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-home768.jpg");
+    }
+}
+
+@media only screen and (max-width:400px) {
+    [class*="sp-nav"] .field div {
+        max-width: 400px;
+    }
+    [class*="sp-nav"] .field div div a {
+        width: 400px;
+    }
+    /* why section */
+    .group-sp-why .group-sp-why-wrap {
+        max-width: 400px;
+    }
+    .group-sp-cal-title-wrap .field-name-field-sp-v-calendar-link {
+        display: block;
+    }
+    .node-type-sp-undergrad-admissions .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-undergraduate_admissions400.jpg");
+    }
+    .node-type-sp-online-learning .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-online_learning400.jpg");
+    }
+    .node-type-sp-visit .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-visit_campus400.jpg");
+    }
+    .node-type-sp-campus-life .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-campus_life400.jpg");
+    }
+    .node-type-sp-paying-for-college .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-payinig_for_college400.jpg");
+    }
+    .node-type-sp-degrees-and-programs .banner-outer {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero_programs_degree400.jpg");
+    }
+    #page.front #intro-wrapper {
+        background-image: url("http://www.cwu.edu/programs/sites/cts.cwu.edu.programs/files/hero-home400.jpg");
+    }
+}
+
+
+/***** Marty's fixes (media-queries: to-be implemented in appropriate ss) *****/
+
+@import url('mr-media-queries.css');

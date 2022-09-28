@@ -1,0 +1,106 @@
+<!--$CwuRes: src/regi/www/webapps/rnreg/web/register.html,v 1.1 2018/10/10 19:02:08 alvisoj Exp $ -->
+<head>
+<!--links to the primary CSS stylesheet-->
+      <link type="text/css" rel="stylesheet" href="./CSS/primary.css" media="all" />
+    <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <title>ResNet Registration: Wireless Help</title>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+$(function(){
+<!--loads the footer and header when called-->
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>     
+
+  </head>
+
+   <body>
+<!-- the id calls header function-->
+<div id="header"></div>
+
+	<div id="wrapper">
+	
+		<a name="main-content"></a>
+		
+<!--Makes the vertical line that separates the side menu and content -->		
+		<div class="verticalLine">
+		
+			<div id="left">  <div class="region">
+    <div id="block-system-main-menu" class="block block-menu">
+
+  
+    <div class="content">
+      <p>&nbsp;</p><p>&nbsp;</p>
+	<ul class="menu"><li class="first collapsed  collapsed " id="dhtml_menu-327"><a href="./register.html" title="">Register a Device</a><ul class="menu">
+	  <li class="first" id="dhtml_menu-326"><a href="./regwired.html" title="">Wired Device</a></li>
+	  <li id="dhtml_menu-1449"><a href="./regwireless.html" title="">Wireless Device (Game LAN)</a></li>
+	  <li  id="dhtml_menu-1452"><a href="./gamehelp.html" title="">Game Consoles Help</a></li>
+	  <li class="last" id="dhtml_menu-1469"><a href="./wiredhelp.html" title="">Wired Registration Help</a></li>
+</ul></li>
+<li class="collapsed collapsed" id="dhtml_menu-328"><a href="./editwired.html" title="">Remove/Edit Devices</a><ul class="menu">
+    <li class="first" id="dhtml_menu-1453"><a href="./editwireless.html" title="">Wireless Devices</a></li>
+    <li id="dhtml_menu-1471"><a href="./editwired.html" title="">Wired Devices</a></li>
+</ul></li>
+
+<!-- Creates breaks to separate the top half of the side menu -->
+        <li>  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br><br/><br/></li>
+
+<li class="last" id="dhtml_menu-1468"><a href="https://www.cwu.edu/resnet/contact-us" title="">Contact Us</a></li>
+</ul>  </div>
+</div>
+
+<div id="block-menu-menu-related-links-menu" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first last" id="dhtml_menu-1467"><a href="http://www.cwu.edu/its" title="" target="_blank">IS Home</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-3">
+
+ <!--Real content starts-->   
+  <div class="content">
+    <p class="indent"><a href="/resnet/contact-us">Resnet Support</a>:<br />(509) 963-2001<br /><a href="http://www.cwu.edu/its-css/computer-labs" target="_blank">Computer Labs</a>:<br />(509) 963-2989<br /><a href="http://www.cwu.edu/its-helpdesk">Service Desk</a>:<br />(509) 963-2001</p><p class="indent">Hours:<br />Mon - Fri, 8 AM to 5 PM</p>  </div>
+    </div>
+  </div>
+                        </div></div>
+              
+<!--Register default page-->
+
+  <div id="content">
+    <br>
+      <h2>What would you like to Register?</h2>	
+	<br>
+		&emsp;&emsp;
+	    <strong><a href="./regwired.html">Wired Device</a></strong>
+		&emsp;&emsp;&emsp;&emsp;&emsp;
+	    <strong><a href="./regwireless.html">Wireless Gaming Device</a></strong>
+		<br>
+		&emsp;&emsp;
+	    <span>(Most Secure)</span> 
+		&emsp;&emsp;&emsp;&emsp;&emsp;
+	    <span>(Less Secure)</span>
+            <!--This worked on Kate but now it is moving everything when it is displayed-->
+	      <div id="show-security">
+		  <p{display: inline}><a>Why?</a><p>
+	      
+		<span id="security" width='25%'>
+		    Due to the nature of Wi-Fi, common threats include: denial of service attacks, spoofing,
+		    session hijacking and eavesdropping. Also you will get better response time (ping) using a wired connection.
+		</span>
+	      
+	      </div>
+    </div>
+  </div>
+
+
+<div id="footer"></div> 
+</body>
+
+
+
+
+</html>

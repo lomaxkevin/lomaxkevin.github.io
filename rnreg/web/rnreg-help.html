@@ -1,0 +1,109 @@
+<!-- $CwuRes: src/regi/www/webapps/rnreg/web/rnreg-help.html,v 1.5 2018/10/10 19:02:08 alvisoj Exp $ -->
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+
+  <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <title>ResNet Registration Help</title>
+
+  <script language="JavaScript">
+
+    window.focus();
+
+  </script>
+
+</head>
+
+<body bgcolor=#c0c0cf>
+
+<font face=Arial size=-1>
+
+<h2>ResNet Registration Help</h2>
+
+You must register a device before it will function on ResNet. When an
+unregistered device connects to a jack the network electronics
+assign its port to a special network segment which has connectivity only
+to the registration server. After a device is registered and it is
+restarted, its port will be reassigned to a routed ResNet segment.<br><br>
+
+<a href="#login">Log in</a><br>
+<a href="#register">Register</a><br>
+<a href="#edit">Edit</a><br>
+<a href="#logout">Log out</a><br>
+<p>
+
+<a name="login"><b>Log in</b></a>
+<p>
+<blockquote>
+  You must log in before you can register a machine. Log in with the
+  credentials you use to log in to the network in the labs. <p>
+
+  Your session will expire after 15 minutes of inactivity and you will need
+  to log in again.
+</blockquote>
+
+<a name="register"><b>Register</b></a>
+<p>
+<blockquote>
+  If you are registering a device from a ResNet jack, the system should
+  automatically determine
+  your Ethernet address and operating system. If it is necessary to enter
+  your Ethernet address manually, you can find it by running winipcfg on
+  Win9x systems, running ipconfig /all on WinNT, Win2k and WinXP systems, or by
+  accessing the AppleTalk or TCP/IP control panel on Macintosh systems.
+  The Ethernet address consists of 12 hex digits and contains no delimiting
+  colons or dashes, e.g. <font color="blue">0000e8129245</font>. 
+  This address must be correct in the database or your machine will not be able
+  to connect to ResNet.<p>
+
+  Click the Agree & submit button to register your device. <b>You will be held
+  responsible for any violations of the appropriate use  policy by devices
+  registered under your name.</b> There is a limit of three registrations per
+  user.<p>
+
+  If there are no errors, the registration system will return a hostname for your device.
+  This hostname uniquely identifies your computer. Your IP address will change,
+  but normally your hostname will remain the same.<p>
+
+  Several of the ResNet tables are only updated every 15 minutes, so you may
+  need to wait for your newly registered device to function on the network.
+  After registering, shut down your system and wait until the next quarter
+  hour before restarting and attempting to access the network. On Win95
+  systems it may be necessary to initiate a DHCP release and renew via
+  winipcfg after the reboot.
+</blockquote>
+
+<a name="edit"><b>Edit</b></a>
+<p>
+<blockquote>
+  This option permits you to edit or delete records of machines you have
+  registered. You will need to edit a record if you have replaced your
+  Ethernet card. Use the
+  Next and Previous buttons to cycle through the hosts registered to you.
+  Use the Update button to save changes you make. Use the Delete button to
+  delete a device you no longer own. <b>Updates and deletes are written to
+  the database immediately.</b>
+</blockquote>
+
+<a name="logout"><b>Log out</b></a>
+<p>
+<blockquote>
+  Please log out or exit your browser when you are finished.
+</blockquote>
+<br>
+
+  <hr width=80%>
+  <form>
+    <center>
+    <input type="button" name="close" value="Close" onclick="window.close()">
+    </center>
+  </form>
+
+</font>
+
+</body>
+</html>

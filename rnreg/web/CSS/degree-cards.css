@@ -1,0 +1,206 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/degree-cards.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+/* Copyright (C) 2017 CWU - All Rights Reserved
+ *
+ * Affects CWU drawers front-end (red)
+ */
+
+ /*-----------------------------
+ from mr*
+ ------------------------------*/
+
+/* Begin Degree Slideshow
+   ========================================================================== */
+
+.eva-degree-slideshow {
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+	.eva-degree-slideshow {
+		width: 92%;
+		padding-top: 20px;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.eva-degree-slideshow {
+		width: 80%;
+		padding-top: 0;
+	}
+}
+
+.eva-degree-slideshow .views-row {
+	position: relative;
+	margin: 0 5px;
+	height: 175px;
+	padding: 20px 0 20px 0;
+	border: 3px solid #a30f37;
+	text-align: center;
+	background: url(../img/info-icon.png) no-repeat 50% 55%;
+	cursor: pointer;
+}
+
+.eva-degree-slideshow .views-field-title {
+	width: 90%;
+	margin: 0 auto;
+	font-weight: 400;
+}
+
+.field-name-field-college-reference {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	padding: 10px 8px;
+	background: #ddbc89;
+	font-size: 80%;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 1.125;
+	background: -moz-linear-gradient(left,  #ddbc89 0%, #e8d2a1 50%, #ddbc89 100%);
+	background: -webkit-linear-gradient(left,  #ddbc89 0%,#e8d2a1 50%,#ddbc89 100%);
+	background: linear-gradient(to right,  #ddbc89 0%,#e8d2a1 50%,#ddbc89 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddbc89', endColorstr='#ddbc89',GradientType=1 );
+}
+
+.eva-degree-slideshow .slick-prev {
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	width: 29px;
+	height: 45px;
+	margin-top: -22px;
+	border: 0;
+	background: url(../img/program-arrow-left.png) no-repeat;
+	text-indent: -9999px;
+	-webkit-background-size: 66%;
+	background-size: 66%;
+	background-position: left;
+}
+
+.eva-degree-slideshow .slick-next {
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	width: 29px;
+	height: 45px;
+	margin-top: -22px;
+	border: 0;
+	background: url(../img/program-arrow-right.png) no-repeat;
+	text-indent: -9999px;
+	-webkit-background-size: 66%;
+	background-size: 66%;
+	background-position: right;
+}
+
+/* End Degree Slideshow
+   ========================================================================== */
+
+
+ /* degree/program cards */
+ .eva-degree-slideshow .views-row {
+   border: none;
+   color: #ffffff;
+   background-color: #a30f37;
+   background-image: none;
+   text-align: left;
+   padding: 10px;
+   min-width: 180px;
+   width: 180px;
+   min-height:150px;
+   margin-right: 10px;
+ }
+ .eva-degree-slideshow .views-field-title {
+   width: 100%;
+   font-weight: 300;
+   font-size: 18px;
+   padding: 0 10px;
+ }
+ .field-name-field-college-reference {
+   position: static;
+   background: none;
+   text-transform: none;
+   font-weight: 300;
+   padding: 10px;
+   line-height: 1.25em
+ }
+ .field-name-field-college-reference a {
+   color: #ffffff;
+ }
+
+ /* Related Programs Cut off Fix */
+ .field-name-field-related-programs-link .slick-list {
+   padding: 20px 0;
+ }
+
+ @media only screen and (min-width: 1000px) {
+ .views-field-field-description .field-content {
+   margin-left: 0; /* this fixes media query from main line 2184 */
+ }
+ }
+
+ /* Updates for 2016 */
+
+ .eva-degree-drawer {
+     /* fix: left align text */
+     text-align: left;
+ }
+ .eva-degree-drawer h1,
+ .eva-degree-drawer h2,
+ .eva-degree-drawer h3,
+ .eva-degree-drawer h4,
+ .eva-degree-drawer h5,
+ .eva-degree-drawer h6,
+ .eva-degree-drawer p,
+ .eva-degree-drawer div,
+ .eva-degree-drawer span {
+     color: #000;
+ }
+ .degree-drawer .views-field-field-contact-email .field-content a{
+     color: #000;
+ }
+
+.views-field.views-field-field-contact-email .field-content p {
+  line-height: 24px;
+}
+.views-label.views-label-field-contact-website {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+}
+.field.field-name-field-program-reference.field-type-entityreference {
+  display: inline-block;
+}
+.degree-drawer .field-name-field-program-reference {
+  margin-bottom: 25px;
+}
+
+.degree-card::after {
+    content: "Learn More +";
+        position: absolute;
+    bottom:10px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.degree-card.card-open::after {
+    content: "Learn More -";
+        position: absolute;
+    bottom:10px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* cards-fix mobile view */
+
+@media screen and (max-width:480px) {
+  .eva-degree-slideshow {
+	width: 80% !important;
+}
+  .front .eva-degree-slideshow .views-row{
+	width: 100% !important;
+}
+}

@@ -1,0 +1,5 @@
+# $CwuRes: src/regi/www/webapps/rnreg/.cvsignore,v 1.1 2003/02/20 18:09:32 hartd Exp $
+build.properties
+build
+dist
+

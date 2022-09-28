@@ -1,0 +1,20 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/dept-resources.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+/***** CWU 2016 THEME *****/
+
+.square-button{
+    background: #990020; 
+    color: #ffffff; 
+    font-weight: bold; 
+    padding: .5em 1.5em .5em 1.5em; 
+    border-bottom: 1px solid #8B072B; 
+    margin-left: auto; 
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.square-button:hover{
+    background: #9c0731;
+}
+
+#right .square-button a{color: #ffffff;}
+

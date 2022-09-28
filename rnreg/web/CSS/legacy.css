@@ -1,0 +1,166 @@
+/* $CwuRes: src/regi/www/webapps/rnreg/web/CSS/legacy.css,v 1.1 2018/10/10 19:01:04 alvisoj Exp $ */
+/* ---------- grid ---------- */
+
+
+/* ---------- general ---------- */
+#wrapper {
+  padding-bottom: 40px;
+  /*padding: 0 20px; we don't need padding outside of wrapper - we need as much horizontal space for content */
+}
+#breadcrumbs {
+  font-size: .9em;
+  padding-bottom: 30px; /* padding bottom prevent BC from bumping against wrapper content */
+}
+
+
+/* ---------- left ---------- */
+#left {
+  margin-right: 0;
+  box-sizing: border-box;
+  -moz-flex-basis:20%;
+  -webkit-flex-basis:20%;
+  flex-basis: 20%;
+}
+#left .menu .menu li {
+  margin: 0 0 5px 10px;
+}
+#left li.collapsed > a, #left li.expanded > a {
+  font-size: 100%;
+  line-height: 25px;
+  font-weight: 300;
+}
+#left h2 {
+  font-size: 130%;
+  font-weight: 300;
+  color: black;
+  margin-left: 0;
+}
+/*.menu > .first.leaf.active-trail.dhtml-menu {
+  display: none;
+}*/
+#left ul.menu{
+  direction: ltr;
+}
+#left li {
+  margin-left: 0;
+  list-style-position: inside;
+}
+#left .menu {
+  margin-bottom: 25px;
+}
+#left .menu li {
+  list-style-position: inside;
+  /*text-indent: 20px*/
+}
+#left .menu li a {
+  text-decoration: none;
+}
+
+/* ---------- middle ---------- */
+#middle, #middle * {
+  -moz-flex-basis:60%;
+  -webkit-flex-basis:60%;
+  flex-basis:60%;
+  max-width:inherit;
+}
+#ldl-container {
+  margin-bottom: 40px;
+}
+#middle #content {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+#middle #content p {
+  margin-bottom: 10px;
+}
+#middle #content table {
+/*    width: 100% !important; */
+}
+#middle img.page-banner {
+  width: 100%;
+}
+#content h2 {
+  line-height: 1.2em;
+}
+
+/* ---------- right ---------- */
+#right .region {
+  padding: 0px;
+}
+#right .block {
+  margin-bottom: 25px;
+}
+#right .content {
+  padding: 0;
+}
+#right ul.menu {
+  direction: ltr;
+  margin-top: 10px;
+}
+#right .menu li {
+  list-style-position: inside;
+}
+#right .menu li a{
+  text-decoration: underline;
+}
+#right h2, #right h3 {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 130%;
+}
+#multicalendar_block_title {
+  display: none;
+}
+#multicalendar_block_date {
+  padding: 10px;
+}
+#multicalendar_arrow_left {
+  left: 10px;
+  top: 10px;
+}
+#multicalendar_arrow_right {
+  right: 10px;
+  top: 10px;
+}
+#multicalendar_block_title a {
+  color: #fff;
+}
+#right #newsfeed_ticker {
+  font-family: roboto, verdana, helvetica, arial, sans-serif;
+  font-weight: 300;
+  padding: 0 5px;
+}
+#right #newsfeed_ticker a {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+#right #newsfeed_ticker p {
+  font-size: 90%;
+  text-transform: none;
+}
+#right table.border tbody {
+  border-top: none;
+}
+#right table.border {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#right table.border td {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+#right h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+img.rssimg {
+ float: inherit;
+ padding: 10px 0 0;
+}
+table#multicalendar_month td {
+  padding: 5px!important;
+}
+
+#block-google-translate-google-translate {
+  display: none;
+}

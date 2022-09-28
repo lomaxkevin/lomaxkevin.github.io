@@ -1,0 +1,339 @@
+<!-- $CwuRes: src/regi/www/webapps/rnreg/src/rnreg2.template,v 1.8 2019/09/03 21:28:39 resnet Exp $ -->
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+  <head>
+    <!--links to the primary CSS stylesheet-->
+    <link type="text/css" rel="stylesheet" href="./CSS/primary.css" media="all" /> <!-- added 6/26 KB-->
+    <META HTTP-EQUIV="expires" CONTENT="Sat, 9 July 1960 07:00:00 GMT">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <title>ResNet Host Registration: Edit Record</title>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Loads header and footer pages -->
+    <script>
+        $(function() {
+            $("#header").load("header2.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <script language="JavaScript">
+
+      <!-- %ROWNUM% -->
+
+      var agent = navigator.userAgent.toLowerCase();
+
+      function checkNIC(NIC, silent) {
+        var validChars = "ABCDEF0123456789";
+        var len = NIC.value.length;
+        if (len < 12) {
+          if (!silent)
+            alert("\nPlease enter a valid Ethernet address");
+          return false;
+        }
+        for (i = 0; (i < len); ++i) {
+          currentChar = NIC.value.charAt(i).toUpperCase();
+          charFound = 0;
+          for (j = 0; (j < 16) && !charFound; ++j) {
+            if (currentChar == validChars.charAt(j))
+              ++charFound;
+          }
+          if (!charFound) {
+            if (!silent)
+              alert("\nPlease enter a valid Ethernet address");
+            return false;
+          }
+        }
+        return true;
+      }
+
+
+      function doPrevious() {
+        document.forms[0].rownum.value = curRow - 1;
+        document.forms[0].action.value = "edit";
+        document.forms[0].submit();
+      }
+
+      function doRevert() {
+        document.forms[0].rownum.value = curRow;
+        document.forms[0].action.value = "edit";
+        document.forms[0].submit();
+      }
+
+      function doDelete() {
+        document.forms[0].rownum.value = curRow;
+        document.forms[0].action.value = "delete";
+        document.forms[0].submit();
+      }
+
+      function doUpdate() {
+        if (checkNIC(document.forms[0].nic, 1) == false) {
+          alert("Form not submitted!\nPlease enter a valid Ethernet address.");
+          return false;
+        }
+        document.forms[0].rownum.value = curRow;
+        document.forms[0].action.value = "update";
+        return true;
+      }
+
+      function doNext() {
+        document.forms[0].rownum.value = curRow + 1;
+        document.forms[0].action.value = "edit";
+        document.forms[0].submit();
+      }
+
+    </script>
+
+  </head>
+
+<body> <!-- removed " background="images/grey1.gif" bgcolor="#ffffff" " 6/26 -KB--> 
+  <div id="header"></div>
+
+  <div id="wrapper">
+
+      <a name="main-content"></a>
+
+      <div class="verticalLine">
+
+          <div id="left">
+              <div class="region">
+                  <div id="block-system-main-menu" class="block block-menu">
+
+                      <div class="content">
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <ul class="menu">
+                              <li class="first collapsed  collapsed " id="dhtml_menu-327"><a href="./register.html" title="">Register a Device</a>
+                                  <ul class="menu">
+                                      <li class="first" id="dhtml_menu-326"><a href="./regwired.html" title="">Wired Device</a></li>
+                                      <li id="dhtml_menu-1449"><a href="./regwireless.html" title="">Wireless Device (Game LAN)</a></li>
+                                      <li id="dhtml_menu-1452"><a href="./gamehelp.html" title="">Game Consoles Help</a></li>
+                                      <li class="last" id="dhtml_menu-1469"><a href="./wiredhelp.html" title="">Wired Registration Help</a></li>
+                                  </ul>
+                              </li>
+                              <li class="collapsed collapsed" id="dhtml_menu-328"><a href="./editwired.html" title="">Remove Devices</a>
+                                  <ul class="menu">
+                                      <li class="first" id="dhtml_menu-1453"><a href="./editwired.html" title="">Wireless Devices</a></li>
+                                      <li id="dhtml_menu-1471"><a href="./editwired.html" title="">Wired Devices</a></li>
+                                  </ul>
+                              </li>
+
+                              <li>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                                  <br/>
+                              </li>
+
+                              <li class="last" id="dhtml_menu-1468"><a href="https://www.cwu.edu/resnet/contact-us" title="">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div id="block-menu-menu-related-links-menu" class="block block-menu">
+
+                      <div class="content">
+                          <ul class="menu">
+                              <li class="first last" id="dhtml_menu-1467"><a href="http://www.cwu.edu/its" title="" target="_blank">IS Home</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div id="block-block-3">
+
+                      <div class="content">
+                          <p class="indent"><a href="/resnet/contact-us">Resnet Support</a>:
+                              <br />(509) 963-2001
+                              <br /><a href="http://www.cwu.edu/its-css/computer-labs" target="_blank">Computer Labs</a>:
+                              <br />(509) 963-2989
+                              <br /><a href="http://www.cwu.edu/its-helpdesk">Service Desk</a>:
+                              <br />(509) 963-2001</p>
+                          <p class="indent">Hours:
+                              <br />Mon - Fri, 8 AM to 5 PM</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+<table>
+
+  <td align=center valign=middle>
+
+    <table border=0 width=430 height=300 cellpadding="3">
+
+      <tr>
+        <td align=center>
+          <font face=Arial size=3><b>Remove Record</b></font>
+          <table border=0 align=center width=340 cellpadding="5">
+          <form name=req method="post" action="/test_rnreg/ResNetReg" onSubmit="return doUpdate()">
+            <input type=hidden name=action value=update>
+            <input type=hidden name=rownum value=0>
+            <tr>
+              <td>
+                <table border=0 align=center width=330 cellpadding=3>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  
+                   <tr>
+                    <td><font face=Arial size=-1>Hardware Vendor:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %MACVENDOR% -->
+                      </font>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td><font face=Arial size=-1>Operating system:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %OPSYSTEM% -->
+                      </font>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td><font face=Arial size=-1>Date registered:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %CREATE_DATE% -->
+                      </font>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td><font face=Arial size=-1>Hostname:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %HOSTNAME% -->
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><font face=Arial size=-1>Ethernet address:</font></td>
+                    <td>
+                      <font face=Arial size=-1>
+                      <!-- %NIC% -->
+                      </font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+                    <td>
+                      <!-- hr width=60% -->
+                      <!-- br -->
+                    </td>
+            </tr>
+            <tr>
+              <td align>
+                <table border=0 align=center width=150 cellpadding=0 cellspacing=0>
+                  <tr>
+                    <td>
+                      <script language="JavaScript">
+                        if (agent.indexOf("msie") != -1) {
+                          document.writeln("<a href='#dummy1' onClick=doPrevious()>" +
+	                    "<img src='images/arrow-left-circle.png' border=none " +
+                            "alt='Previous Record'></a>");
+                          document.writeln("<a name='dummy1'>");
+                        }
+                        else {
+                          document.writeln("<a href='javascript:doPrevious()'>" +
+		            "<img src='images/arrow-left-circle.png' border=none " +
+                            "alt='Previous Record'></a>");
+                        }
+                      </script>
+                    </td> 
+                    <!--<td>
+                      <script language="JavaScript">
+                        if (agent.indexOf("msie") != -1) {
+                          document.writeln("<a href='#dummy2' onClick=doRevert()>" +
+	                    "<img src='images/rnreg-toolbar2.gif' border=none></a>");
+                          document.writeln("<a name='dummy2'>");
+                        }
+                        else {
+                          document.writeln("<a href='javascript:doRevert()'>" +
+		            "<img src='images/rnreg-toolbar2.gif' border=none></a>");
+                        }
+                      </script>
+                    </td> -->
+                    <!--<td>
+                      <script language="JavaScript">
+                        if (agent.indexOf("msie") != -1) {
+                          document.writeln("<a href='#dummy3' onClick=doDelete()>" +
+	                    "<img src='images/rnreg-toolbar3.gif' border=none></a>");
+                          document.writeln("<a name='dummy3'>");
+                        }
+                        else {
+                          document.writeln("<a href='javascript:doDelete()'>" +
+		            "<img src='images/rnreg-toolbar3.gif' border=none></a>");
+                        }
+                      </script>
+                    </td>  -->
+                    <td>
+                      <script language="JavaScript">
+                        if (agent.indexOf("msie") != -1) {
+                          document.writeln("<a href='#dummy3' onClick=doDelete()>" +
+	                    "<img src='images/rnreg-toolbar3.gif' border=none></a>");
+                          document.writeln("<a name='dummy3'>");
+                        }
+                        else {
+                          document.writeln("<a href='javascript:doDelete()'>" +
+		            "<img src='images/new_delete.png' border=none></a>");
+                        }
+                      </script>
+                    </td>
+		    <!--<td>
+                      <input type=image src="images/rnreg-toolbar4.gif" border=none>
+                    </td> -->
+                    <td>
+                      <script language="JavaScript">
+                        if (agent.indexOf("msie") != -1) {
+                          document.writeln("<a href='#dummy5' onClick=doNext()>" +
+	                    "<img src='images/arrow-right-circle-1.png' border=none " +
+                            "alt='Next Record'></a>");
+                          document.writeln("<a name='dummy5'>");
+                        }
+                        else {
+                          document.writeln("<a href='javascript:doNext()'>" +
+		            "<img src='images/arrow-right-circle-1.png' border=none " +
+                            "alt='Next Record'></a>");
+                        }
+                      </script>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </form>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</table>
+</div> <!--wrapper div -->
+
+<div id="footer"></div>
+</body>
+
+</html>
